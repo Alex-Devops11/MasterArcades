@@ -1,0 +1,256 @@
+<html lang="es">
+  <head>
+    <title>Master Arcades | Personalizar</title>
+    <link rel="icon" type="image/x-icon" href="./masterArcades.png" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+    <style>
+      menu{
+        display: none;
+      }
+      body{
+        font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+      }
+      @media (max-width:1000px){
+        menu{
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          padding: 1rem;
+          gap: 0.5rem;
+        }
+        
+        div.flex.items-center.gap-9{
+          display: none;
+        }
+        /**div {
+          width: 49.vh;
+          height: auto;
+        }**/
+        div.flex.h-full.flex-1.flex-col.gap-4.rounded-lg.min-w-60{
+          width: 45vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+      style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); --select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(136,99,100)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: &quot;Plus Jakarta Sans&quot;, &quot;Noto Sans&quot;, sans-serif;"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0f0] px-12 py-6">
+        <a href="index.html">  
+          <div class="flex items-center gap-4 text-[#181111]">
+            <div class="size-10">
+              <img src="./masterArcades.png" alt="Logo" href="index.html">
+            </div>
+            <h2 class="text-[#181111] text-lg font-bold leading-tight tracking-[-0.015em]">Master Arcades</h2>
+          </div>
+        </a>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#181111] text-sm font-medium leading-normal" href="index.html">Inicio</a>
+              <a class="text-[#181111] text-sm font-medium leading-normal" href="personalizar.html">Personalizar</a>
+              <a class="text-[#181111] text-sm font-medium leading-normal" href="productos.html">Productos</a>
+              <a class="text-[#181111] text-sm font-medium leading-normal" href="comparador.html">Comparar</a>
+              <a class="text-[#181111] text-sm font-medium leading-normal" href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        </header>
+        <menu><a class="text-[#181111] text-3xl font-medium leading-normal" href="index.html">Inicio</a>
+              <a class="text-[#181111] text-3xl font-medium leading-normal" href="personalizar.html">Personalizar</a>
+              <a class="text-[#181111] text-3xl font-medium leading-normal" href="productos.html">Productos</a>
+              <a class="text-[#181111] text-3xl font-medium leading-normal" href="comparador.html">Comparar</a>
+              <a class="text-[#181111] text-3xl font-medium leading-normal" href="contacto.html">Contacto</a></menu>
+              <div class="px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                  <div class="flex flex-wrap justify-between gap-3 p-4">
+                    <p class="text-[#181111] text-lg md:text-6xl lg:text-[32px] font-bold leading-tight min-w-72">
+                      Construye tu máquina soñada
+                    </p>
+                  </div>
+                  <h3 class="text-[#181111] text-base md:text-4xl lg:text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">
+                    1. Elige tu modelo
+                  </h3>
+                  <div class="flex flex-wrap gap-3 p-4">
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                SANWA
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                Mini bartop 19"
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                Wall-Cade 22"
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                Master Coin
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                Mini Moster 24"
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                Cabinet classic
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                California
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                Mini Cabinet
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+              <label
+                class="text-base sm:text-3xl xl:text-base font-medium leading-normal flex items-center justify-center rounded-lg border border-[#e5dcdc] px-4 h-11 text-[#181111] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#e92932] relative cursor-pointer"
+              >
+                Monster 50"
+                <input type="radio" class="invisible absolute" name="d349ed3c-3581-4ed0-a560-5bcabf036e88" />
+              </label><br>
+            </div>
+            <h3 class="text-[#181111] text-base sm:text-4xl xl:text-base font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">2. Selecciona tu diseño</h3>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDufbzx44CSMvdURnt7yArCz9Az6gtFyNInGmj4fNOtTb8vEohzlqRafWlx_lJJXPsF9ExYsYbN-MO8vpbCUnFiy4ihslQTsN4ozJpg0xJFVrExhREgVh5Peicgochc_xjUlzEA0CPlfmDUJfuF4spAyf1z7x6FixFrOIhiSQnkBGUv5GeHOSoA9dAM6idYOIyUs-MhfelRaicv7iuUxhfvbDotGAM5JZ7jceGimdprtLTZlSb1iZW_6V91zznvwInlg7oaSZXtmgby");'
+                ></div>
+                <p class="text-[#181111] text-base sm:text-2xl font-medium leading-normal">Retro Stripes</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEJEQRBriC83BGarcGxbThORDpim8tBW_2awULP8qZykTGPElo0ZL4kcMEWEWVmi_G3YFZf0S11AZWSDkbt11CHdt0vDRvTJcRMez1RemCZZrK_Qt5xf4oEeD3dy2TGpRPCwAb-D5QWPYCE2KQ_vHFprrk1GYW6UMVTTG8jLBzSPAibFfeGviFAjmYgtYB6RlgqCINZJtokhIKvLa9mDYF_4riGXmbPNJOdX8GX812cxn3T6TCaLu1PzlVuvn8rpieNwP4zHWQwpMH");'
+                ></div>
+                <p class="text-[#181111] text-base sm:text-2xl font-medium leading-normal">Galactic Nebula</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCl0mchXY7AybVVKTEpFUYFUGHhgBSD4AtC2Tiwo7wL8GP0RnQosf2NEccFssqdbx2_vV5ZiyEpZHAeC1CWWoAb2J_oSxhVGFjTvZv1t7oV7QTrf21Fddd-0E3LNl0JOTwUKYHoDk1MrXeCeAKLAjjhrWER-wMUhWNbrUYUwYsVG36V49o_9LgPc8SOmLSyh1YuALpQoMrmBmZnlnZfsZTRHA29E1AHNJongrN_nSqEckkh_ARZIiXnKrmbv6k4q00eOVyjGY2AaKjH");'
+                ></div>
+                <p class="text-[#181111] text-base sm:text-2xl font-medium leading-normal">Pixelated Hero</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARoDO1GNeWHfd7R-AA5ZVdR82Jm-yefL36vwvr63bDSOB-FATrWBxk11tgaK5cG3yQJOO-vGxadXV1sFrZkAL7L5DX6x-_Fb4s6djBCfnSkb9fuVU0SC8jDCJMfTWgdwd8dwHooTEHCr2gtHzFKRcqVbOgkJwN2H6PWDVarT4HyZ8BrzMzJnOAZtdJHbZEBs85tlibecK_2Rdw3ar05eHi4tlBJc1LRkR8xzlTfizx5SgY5MvciWM7yxW9UrX53nOsr759qntbNzO3");'
+                ></div>
+                <p class="text-[#181111] text-base sm:text-2xl font-medium leading-normal">Diseño personalizado</p>
+              </div>
+            </div>
+            <h3 class="text-[#181111] text-lg lg:text-xl sm:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">3. Personaliza tus accesorios</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#181111] text-lg lg:text-xl sm:text-3xl font-medium leading-normal pb-2">Estilo de Joystick/Planca</p>
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181111] focus:outline-0 focus:ring-0 border border-[#e5dcdc] bg-white focus:border-[#e5dcdc] h-14 bg-[image:--select-button-svg] placeholder:text-[#886364] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one">Elige tu Joystick</option>
+                  <option value="two">Uso rudo</option>
+                  <option value="three">Competencia (Octagonal 8 puntos)</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#181111] text-lg lg:text-xl sm:text-3xl font-medium leading-normal pb-2">Botones</p>
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181111] focus:outline-0 focus:ring-0 border border-[#e5dcdc] bg-white focus:border-[#e5dcdc] h-14 bg-[image:--select-button-svg] placeholder:text-[#886364] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one">Selecciona el tipo de botones</option>
+                  <option value="two">Uso Rudo</option>
+                  <option value="three">SANWA</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#181111] text-lg lg:text-xl sm:text-3xl font-medium leading-normal pb-2">Tamaño de pantalla ( '' pulgadas)</p>
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181111] focus:outline-0 focus:ring-0 border border-[#e5dcdc] bg-white focus:border-[#e5dcdc] h-14 bg-[image:--select-button-svg] placeholder:text-[#886364] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one">Selecciona el tamaño en pulgadas</option>
+                  <option value="two">Sin pantalla</option>
+                  <option value="three">19"</option>
+                  <option value="three">22"</option>
+                  <option value="three">24"</option>
+                  <option value="three">32"</option>
+                  <option value="three">50"</option>
+                </select>
+              </label>
+            </div>
+            <h3 class="text-[#181111] text-lg lg:text-xl sm:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">4. Añadir accesorios</h3>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#e5dcdc] border-2 bg-transparent text-[#e92932] checked:bg-[#e92932] checked:border-[#e92932] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#e5dcdc] focus:outline-none"
+                />
+                <p class="text-[#181111] text-base font-normal leading-normal">Iluminación LED</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#e5dcdc] border-2 bg-transparent text-[#e92932] checked:bg-[#e92932] checked:border-[#e92932] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#e5dcdc] focus:outline-none"
+                />
+                <p class="text-[#181111] text-base font-normal leading-normal">Sistema de monedero</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+            </div>
+            <h3 class="text-[#181111] text-lg lg:text-xl sm:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">5. Previsualización de tu máquina arcade</h3>
+            <div class="flex w-full grow bg-white @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-white @[480px]:gap-2 aspect-[3/2] rounded-lg flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3XiOw77jMt0Zg5Nhup2kun2OGeyFNmfMDtZeIwcBVa8ixwfHu6hPWna2fi7Xs3oQEIKCw3YwRy6RKhRiJ-k6RKBZmnXIZowUizH930E7S4VzcCacMJROwiarR2zsrCikiFe86Pct4VPzK46UX8LLtrOog6eh3XXYh9lczlWD4wtrCPfQJMZz7DmbXrs9BvwWIYStWwCemrGdJ9A4G9DvA3E3qLLMP-uZJ6IDlkGPieraF_PfyLyeD25eSGkQ6BsjL7ByCgTMD5auS");'
+                ></div>
+              </div>
+            </div>
+            <div class="flex justify-stretch">
+              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-end">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f4f0f0] text-[#181111] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Guardar diseño</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e92932] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Añadir al carrito</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
