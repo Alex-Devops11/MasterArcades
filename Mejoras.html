@@ -60,7 +60,7 @@
         }
       }
 
-      /* Medium tablets */
+      /* Medium tablets - Texto aumentado 8% para mejor legibilidad */
       @media (max-width: 900px) {
         .px-40 {
           padding-left: 1.5rem !important;
@@ -68,19 +68,28 @@
         }
         
         .main-title {
-          font-size: 1.75rem;
+          font-size: 1.89rem; /* Aumentado 8%: 1.75rem * 1.08 */
           text-align: center;
         }
         
         .section-title {
-          font-size: 1.2rem;
+          font-size: 1.296rem; /* Aumentado 8%: 1.2rem * 1.08 */
           text-align: center;
           padding: 1rem !important;
         }
         
         .section-description {
+          font-size: 1.08rem; /* Aumentado 8% desde base 1rem */
           text-align: center;
           padding: 0 1rem 1rem 1rem !important;
+        }
+        
+        .product-title {
+          font-size: 1.215rem; /* Aumentado 8% desde base 1.125rem */
+        }
+        
+        .product-description {
+          font-size: 0.945rem; /* Aumentado 8% desde base 0.875rem */
         }
         
         .grid {
@@ -88,6 +97,56 @@
           gap: 1.25rem !important;
         }
       }
+
+      /* ALTERNATIVA: Medium mobile devices (769px-900px) - Comentado para uso futuro */
+      /*
+      @media (min-width: 769px) and (max-width: 900px) {
+        .main-title {
+          font-size: 1.89rem; // Aumentado 8%
+        }
+        
+        .section-title {
+          font-size: 1.296rem; // Aumentado 8%
+        }
+        
+        .section-description {
+          font-size: 1.08rem; // Aumentado 8%
+        }
+        
+        .product-title {
+          font-size: 1.215rem; // Aumentado 8%
+        }
+        
+        .product-description {
+          font-size: 0.945rem; // Aumentado 8%
+        }
+      }
+      */
+
+      /* ALTERNATIVA: Large mobile devices (601px-768px) - Comentado para uso futuro */
+      /*
+      @media (min-width: 601px) and (max-width: 768px) {
+        .main-title {
+          font-size: 1.755rem; // Aumentado 8% desde 1.625rem
+        }
+        
+        .section-title {
+          font-size: 1.35rem; // Aumentado 8% desde 1.25rem
+        }
+        
+        .section-description {
+          font-size: 1.08rem; // Aumentado 8% desde 1rem
+        }
+        
+        .product-title {
+          font-size: 1.215rem; // Aumentado 8% desde 1.125rem
+        }
+        
+        .product-description {
+          font-size: 0.972rem; // Aumentado 8% desde 0.9rem
+        }
+      }
+      */
 
       /* Tablet responsive design */
       @media (max-width:1000px){
